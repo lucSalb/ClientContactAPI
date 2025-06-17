@@ -4,11 +4,12 @@ namespace ClientContactAPI.Interfaces
 {
     public interface ITemplate
     {
-        public List<Template> GetTemplates();
-        public Template GetTemplate(string id);
-        public OperationResult RegisterTemplate(Template template);
-        public OperationResult UpdateTemplate(Template template);
-        public OperationResult DeleteTemplate(string id);
+        public Task<bool> CreateTemplateDB();
+        public Task<List<Template>> GetTemplates();
+        public Task<Template?> GetTemplate(string id);
+        public Task<APIResponse> RegisterTemplate(Template template);
+        public Task<APIResponse> UpdateTemplate(Template template);
+        public Task<APIResponse> DeleteTemplate(string id);
 
     }
 }

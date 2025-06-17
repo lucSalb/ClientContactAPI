@@ -1,17 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ClientContactAPI.Classes
+namespace ClientContactAPI.ViewModels
 {
-    public class Template
+    public class TemplateViewModel
     {
-        [Required]
-        public string Id { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]
         public string Subject { get; set; }
         [Required]
         public string Body { get; set; }
-
     }
 }

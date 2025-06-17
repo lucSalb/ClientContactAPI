@@ -1,17 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.CodeAnalysis;
 
-namespace ClientContactAPI.Classes
+namespace ClientContactAPI.ViewModels
 {
-    public class Customer
+    public class CustomerViewModel
     {
-        [Required]
-        public string Id { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]
         public string Email { get; set; }
-
     }
-   
 }
